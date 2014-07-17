@@ -1,0 +1,19 @@
+header.site-header {
+  font: 500 1.4em Helvetica;
+  text-align: left;
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover{
+      color: #96CDCD;
+    }
+  }
+  h1 {
+    font: 500 2em Helvetica;
+    letter-spacing: -0.11em;
+  }
+}
+
+.site-nav {
+  text-align: right;
+}
