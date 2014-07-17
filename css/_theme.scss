@@ -2,25 +2,48 @@
   margin: 0;
   padding: 0;
 }
-
+// body {
+//   color: $offBlack;
+//   background: $offWhite;
+// }
 header.site-header {
-  font: 500 1.4em Helvetica;
-  text-align: left;
   background: $dk_teal;
+  border-bottom: 1px solid;
   a {
-    color: #000;
+    color: $offBlack;
     text-decoration: none;
     &:hover{
-      color: #96CDCD;
+      text-decoration: underline;
     }
   }
+}
+header.site-header:after {
+  content:"";
+  visibility: hidden;
+  clear: both;
+}
+div.site-title {
+  padding: 0.25em;
+  display: inline-block;
   h1 {
     font: 500 2em Helvetica;
     letter-spacing: -0.11em;
-    color: #CCCCCC;
+    text-align: left;
+    color: $offBlack;
   }
 }
 
-.site-nav {
-  text-align: right;
+nav.site-nav {
+  font: 400 1em Helvetica;
+  display: inline-block;
+  margin-left: 60%;
+}
+div.page-link {
+  display: inline-block;
+  border-right: 1px solid;
+  padding: 0 0.75em;
+  &:last-child {
+    border-right: none;
+    padding: 0 0 0 0.75em;
+  }
 }

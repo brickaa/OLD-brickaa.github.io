@@ -3,6 +3,26 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+header div.wrap {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em; }
+  header div.wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media screen and (max-width: 768px) {
+  div.site-title {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 100%;
+    margin-left: 25.89467%; }
+    div.site-title:last-child {
+      margin-right: 0; } }
+
 .home {
   max-width: 68em;
   margin-left: auto;
@@ -26,18 +46,37 @@ div.page-content {
   padding: 0; }
 
 header.site-header {
-  font: 500 1.4em Helvetica;
-  text-align: left;
-  background: #bdcfbd; }
+  background: #bdcfbd;
+  border-bottom: 1px solid; }
   header.site-header a {
-    color: #000;
+    color: #404040;
     text-decoration: none; }
     header.site-header a:hover {
-      color: #96CDCD; }
-  header.site-header h1 {
+      text-decoration: underline; }
+
+header.site-header:after {
+  content: "";
+  visibility: hidden;
+  clear: both; }
+
+div.site-title {
+  padding: 0.25em;
+  display: inline-block; }
+  div.site-title h1 {
     font: 500 2em Helvetica;
     letter-spacing: -0.11em;
-    color: #CCCCCC; }
+    text-align: left;
+    color: #404040; }
 
-.site-nav {
-  text-align: right; }
+nav.site-nav {
+  font: 400 1em Helvetica;
+  display: inline-block;
+  margin-left: 60%; }
+
+div.page-link {
+  display: inline-block;
+  border-right: 1px solid;
+  padding: 0 0.75em; }
+  div.page-link:last-child {
+    border-right: none;
+    padding: 0 0 0 0.75em; }
