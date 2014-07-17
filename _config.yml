@@ -1,0 +1,12 @@
+# Site settings
+title: Becca Aaronson
+email: becca.aaronson@gmail.com.com
+description: "This is the story of a girl who loved cats. She wrote a shit ton about abortion, which was cool for awhile, but all the crazy people made her sad. She learned to code and the rest is history. The end."
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: becca_aa
+github_username:  brickaa
+
+# Build settings
+markdown: kramdown
+permalink: pretty
