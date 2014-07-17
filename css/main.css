@@ -21,9 +21,14 @@ div.page-content {
   div.page-content:last-child {
     margin-right: 0; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 header.site-header {
   font: 500 1.4em Helvetica;
-  text-align: left; }
+  text-align: left;
+  background: #bdcfbd; }
   header.site-header a {
     color: #000;
     text-decoration: none; }
@@ -31,7 +36,8 @@ header.site-header {
       color: #96CDCD; }
   header.site-header h1 {
     font: 500 2em Helvetica;
-    letter-spacing: -0.11em; }
+    letter-spacing: -0.11em;
+    color: #CCCCCC; }
 
 .site-nav {
   text-align: right; }
