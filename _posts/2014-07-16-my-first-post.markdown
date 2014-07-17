@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "My first post!"
-date:   2014-07-16 19:07:25
-categories: jekyll update
+date:   2014-07-16 19:08:25
 ---
 
 Hi there. Learning Jekyll will super fun. I'm excited to see if it'll help me template the [*super dope*](http://apps.texastribune.org/hurting-for-work/) websites I've been building for our special investigative projects.
