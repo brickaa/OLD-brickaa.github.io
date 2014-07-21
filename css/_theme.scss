@@ -10,7 +10,14 @@ hr.orange {
   margin: 1.5em 0;
   clear: both;
 }
-
+a {
+  color: $offBlack;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+    color: $dk_teal;
+  }
+}
 //Site Header
 header.site-header {
   background: $dk_teal;
@@ -18,10 +25,8 @@ header.site-header {
   margin: 0;
   padding: 0;
   a {
-    color: $offBlack;
-    text-decoration: none;
     &:hover{
-      text-decoration: underline;
+      color: $offBlack;
     }
   }
 }
@@ -68,17 +73,11 @@ ul.posts {
     font: 300 1.5em Helvetica;
     margin: 0;
   }
-  a {
-    color: $offBlack;
-  }
-  a:hover {
-    color: $gray;
-  }
 }
 .post-date {
   margin-top: 1em;
   font-style: italic;
-  color: $lt_teal;
+  color: $gray;
 }
 .post-excerpt {
   p { 
@@ -86,3 +85,6 @@ ul.posts {
   }
 }
 
+img {
+  width: 100%;
+}

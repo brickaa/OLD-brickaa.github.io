@@ -11,5 +11,5 @@ It includes three investigative pieces that I wrote for The Texas Tribune/New Yo
 The landing page is an extension of the platform that I built for Texas Tribune's "[Hurting for Work](http://apps.texastribune.org/hurting-for-work/)" project. Next up: Turning the design into a static template, so that it's easily reuseable. 
 
 P.S. - As I type this, my cats are snuggling next to me like this...
-![alt cat picture]({{ site.url }}/images/cat_snuggles.jpg)
+![alt cat picture](/images/cat_snuggles.jpg)
 
