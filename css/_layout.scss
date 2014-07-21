@@ -1,6 +1,6 @@
 // Define your breakpoints
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(min-width 480px 4);
+$desktop: new-breakpoint(min-width 800px 12);
+$mobile: new-breakpoint(max-width 480px);
 
 //header.html
 header div.wrap {
@@ -8,15 +8,38 @@ header div.wrap {
   @include pad(0.5em);
 }
 div.site-title {
-  @include media($tablet) {
+  @include media($desktop) {
     @include span-columns(8);
     @include shift(2);
   }
 }
-.home {
+nav {
+  @include media($desktop) {
+    @include span-columns(6);
+    @include shift(3);
+  }
+}
+
+div.wrap {
   @include outer-container();
 }
-div.page-content {
-  @include span-columns(8);
-  @include shift(2);
+.main-grid {
+  @include media($desktop) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}
+
+//List of Posts
+.post-title {
+  @include media($desktop) {
+    @include span-columns(3 of 8);
+    @include pad(0);
+  }
+}
+.post-excerpt {
+  @include media($desktop) {
+    @include span-columns(5 of 8);
+    @include omega();
+  }
 }
