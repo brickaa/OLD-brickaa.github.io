@@ -445,6 +445,10 @@ a {
     text-decoration: underline;
     color: #bdcfbd; }
 
+img {
+  height: 500px;
+  margin: 0 auto; }
+
 header.site-header {
   background: #bdcfbd;
   border-bottom: 1px solid;
@@ -495,6 +499,3 @@ ul.posts {
 
 .post-excerpt p {
   margin: 0 0 1em 0; }
-
-img {
-  width: 100%; }

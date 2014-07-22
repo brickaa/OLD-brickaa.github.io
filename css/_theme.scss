@@ -18,6 +18,12 @@ a {
     color: $dk_teal;
   }
 }
+img {
+  height: 500px;
+  margin: 0 auto;
+}
+
+
 //Site Header
 header.site-header {
   background: $dk_teal;
@@ -85,6 +91,4 @@ ul.posts {
   }
 }
 
-img {
-  width: 100%;
-}
+
