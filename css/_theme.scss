@@ -3,7 +3,7 @@
 body {
   color: $offBlack;
   background: $offWhite;
-  font: 300 1em Helvetica;
+  @include font(1, left);
 }
 hr.orange {
   border: 1px solid $orange;
@@ -13,7 +13,7 @@ hr.orange {
 a {
   color: $offBlack;
   text-decoration: none;
-  &:hover{
+  &:hover {
     text-decoration: underline;
     color: $dk_teal;
   }
@@ -22,7 +22,6 @@ img {
   height: 500px;
   margin: 0 auto;
 }
-
 
 //Site Header
 header.site-header {
@@ -36,19 +35,19 @@ header.site-header {
     }
   }
 }
+
 div.site-title {
   padding: 0.25em;
   h1 {
-    font: 300 2em Helvetica;
-    letter-spacing: 0.5em;
-    text-align: center;
+    @include font(2, center);
     color: $offBlack;
+    @include letter-space(10);
   }
 }
 
 //Top Navigation Bar
 nav.site-nav {
-  font: 400 1em Helvetica;
+  @include font(1, center);
   color: #000;
   text-align:center;
 }
@@ -76,7 +75,7 @@ ul.posts {
 }
 .post-title {
   h2 {
-    font: 300 1.5em Helvetica;
+    @include font(1.5, left);
     margin: 0;
   }
 }
@@ -88,6 +87,14 @@ ul.posts {
 .post-excerpt {
   p { 
     margin: 0 0 1em 0; 
+  }
+}
+
+.social {
+  @include font(1, center);
+  @include letter-space(3);
+  ul li {
+    display: inline-block;
   }
 }
 

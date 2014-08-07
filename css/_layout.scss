@@ -1,18 +1,17 @@
-// Define your breakpoints
-$desktop: new-breakpoint(min-width 800px 12);
-$mobile: new-breakpoint(max-width 480px);
-
 //header.html
 header div.wrap {
   @include outer-container();
   @include pad(0.5em);
 }
+
 div.site-title {
   @include media($desktop) {
     @include span-columns(8);
     @include shift(2);
   }
 }
+
+//header nav
 nav {
   @include media($desktop) {
     @include span-columns(6);
@@ -20,9 +19,12 @@ nav {
   }
 }
 
+//Add to Grid
 div.wrap {
   @include outer-container();
 }
+
+//Main center grid
 .main-grid {
   @include media($desktop) {
     @include span-columns(8);
@@ -30,7 +32,7 @@ div.wrap {
   }
 }
 
-//List of Posts
+//Post List
 .post-title {
   @include media($desktop) {
     @include span-columns(3 of 8);

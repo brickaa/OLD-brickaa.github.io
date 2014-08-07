@@ -1,0 +1,8 @@
+@mixin letter-space($amount) {
+  letter-spacing: $amount+px;
+}
+
+@mixin font($size, $align) {
+  font: 300 $size+em Helvetica;
+  text-align: $align;
+}

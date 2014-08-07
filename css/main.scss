@@ -1,6 +1,13 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "normalize";
-@import "settings";
+@import "settings"; // breakpoints
+// variables
+@import "typography";
+// helpers
 @import "layout";
+// homepage
+// nav
+// posts
+// pages
 @import "theme";

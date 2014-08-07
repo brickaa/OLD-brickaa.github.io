@@ -431,7 +431,8 @@ div.wrap {
 body {
   color: #404040;
   background: whitesmoke;
-  font: 300 1em Helvetica; }
+  font: 300 1em Helvetica;
+  text-align: left; }
 
 hr.orange {
   border: 1px solid #fd795b;
@@ -461,12 +462,13 @@ div.site-title {
   padding: 0.25em; }
   div.site-title h1 {
     font: 300 2em Helvetica;
-    letter-spacing: 0.5em;
     text-align: center;
-    color: #404040; }
+    color: #404040;
+    letter-spacing: 10px; }
 
 nav.site-nav {
-  font: 400 1em Helvetica;
+  font: 300 1em Helvetica;
+  text-align: center;
   color: #000;
   text-align: center; }
 
@@ -490,6 +492,7 @@ ul.posts {
 
 .post-title h2 {
   font: 300 1.5em Helvetica;
+  text-align: left;
   margin: 0; }
 
 .post-date {
@@ -499,3 +502,10 @@ ul.posts {
 
 .post-excerpt p {
   margin: 0 0 1em 0; }
+
+.social {
+  font: 300 1em Helvetica;
+  text-align: center;
+  letter-spacing: 3px; }
+  .social ul li {
+    display: inline-block; }
