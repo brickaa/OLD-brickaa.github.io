@@ -11,3 +11,4 @@ github_username:  brickaa
 # Build settings
 markdown: kramdown
 permalink: pretty
+masonry_js: masonry.min.js
