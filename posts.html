@@ -1,8 +1,26 @@
 ---
-layout: post
-title:  "test"
-date:   2014-08-10 19:08:25
+layout: page
+title: Portfolio
+permalink: /portfolio/
 ---
+<!-- <div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <div class="post-title">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>{{ post.title }}</h2></a>
+          <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+        </div>
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
+      </li>
+      <hr class="orange">
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div> -->
 
 <div id="container" class="clearfix">
 
@@ -177,6 +195,7 @@ date:   2014-08-10 19:08:25
     <p>Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>
   </div>
 
-</div> <!-- #container -->
+</div>
 
+<script type="text/javascript" src="../masonry.min.js"></script>
 
