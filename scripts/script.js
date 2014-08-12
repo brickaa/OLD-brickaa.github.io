@@ -8,7 +8,18 @@ $(document).ready(function() {
   $.getJSON('https://spreadsheets.google.com/feeds/list/1Vdt46LVbwiivYQw3qNq2Qn7qZktYEIEztKF9z5Ma3Vc/od6/public/values?alt=json', function(json) {
   	data = json;
   }).done( function() {
-  	console.log(data);
-  })
+  	// console.log(data.feed.entry[0]);
+  	buildPortfolio(data);
+  });
+
+  function buildPortfolio(data) {
+
+  	for (var i = 0; i < data.feed.entry.length; i++) {
+  		// entry = data.feed.entry[i];
+  		console.log(data.feed.entry[i]);
+  	}
+
+  }
 
 });
+
