@@ -12,3 +12,12 @@ github_username:  brickaa
 markdown: kramdown
 permalink: pretty
 masonry_js: masonry.min.js
+
+
+#
+# Jekyll-Assets configuration
+#
+
+assets:
+  compress:
+    css: sass
