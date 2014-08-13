@@ -10,15 +10,23 @@ $(document).ready(function() {
   }).done( function() {
   	// console.log(data.feed.entry[0]);
   	buildPortfolio(data);
+  	buildWall();
   });
 
   function buildPortfolio(data) {
 
   	for (var i = 0; i < data.feed.entry.length; i++) {
-  		// entry = data.feed.entry[i];
+  		entry = data.feed.entry[i];
   		console.log(data.feed.entry[i]);
+  		$('<div class="item col2">' +
+		    '<h3><a href="">' + entry.title.$t + '</a></h3>' +
+		    '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>' +
+		  '</div>').appendTo('#container');
   	}
+  }
 
+  function buildWall() {
+    var wall = new Masonry( document.getElementById('container') );
   }
 
 });
