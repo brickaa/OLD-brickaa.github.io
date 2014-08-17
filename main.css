@@ -451,3 +451,32 @@ nav {
     padding: 0; }
     .newsapps div:last-child {
       margin-right: 0; } }
+
+body {
+  color: #404040;
+  background: whitesmoke;
+  font: 300 1em Helvetica;
+  text-align: left; }
+
+a {
+  color: #404040;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: #bdcfbd; }
+
+header {
+  background: #bdcfbd;
+  border-bottom: 1px solid;
+  margin: 0;
+  padding: 0; }
+  header a:hover {
+    color: #404040; }
+
+hr {
+  border: 1px solid #fd795b;
+  margin: 1.5em 0;
+  clear: both; }
+
+img {
+  width: 100%; }

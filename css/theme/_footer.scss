@@ -1,0 +1,7 @@
+.social {
+  @include font(1, center);
+  @include letter-space(3);
+  ul li {
+    display: inline-block;
+  }
+}

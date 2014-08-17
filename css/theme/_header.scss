@@ -1,0 +1,24 @@
+.site-title {
+  padding: 0.25em;
+  h1 {
+    @include font(2, center);
+    color: $offBlack;
+    @include letter-space(10);
+  }
+}
+
+//Top Navigation Bar
+nav.site-nav {
+  @include font(1, center);
+  color: #000;
+  text-align:center;
+}
+div.page-link {
+  display: inline-block;
+  border-right: 1px solid;
+  padding: 0 0.75em;
+  &:last-child {
+    border-right: none;
+    padding: 0 0 0 0.75em;
+  }
+}
