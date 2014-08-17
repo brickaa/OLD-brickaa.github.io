@@ -20,7 +20,7 @@ $(document).ready(function() {
       $('<div class="box col2">' +
         '<h3><a href="' + entry.gsx$url.$t +'">' + entry.title.$t + '</a></h3>' +
         '<p>' + entry.gsx$date.$t + '</p>' +
-        '<img src=">' + entry.gsx$img.$t + '" />' +
+        '<img src="' + entry.gsx$img.$t + '" />' +
       '</div>').appendTo('#container');
     }
   }
