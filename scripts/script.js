@@ -21,6 +21,7 @@ $(document).ready(function() {
         '<h3><a href="' + entry.gsx$url.$t +'">' + entry.title.$t + '</a></h3>' +
         '<p>' + entry.gsx$date.$t + '</p>' +
         '<img src="' + entry.gsx$img.$t + '" />' +
+        '<p>' + entry.gsx$desc.$t + '</p>' +
       '</li>').appendTo('.list-grid');
     }
   }

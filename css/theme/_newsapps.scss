@@ -1,7 +1,7 @@
 .newsapps {
-  @include list-grid($large, 12, 3);
-}
+  @include list-grid($medium, 12, 3);
 
-img {
+  img {
 	width: 75%;
+  }
 }
