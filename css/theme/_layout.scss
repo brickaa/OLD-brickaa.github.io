@@ -1,6 +1,6 @@
 //header.html
 header div.wrap {
-  @include outer-container();
+  @extend %wrap;
   @include pad(0.5em);
 }
 
@@ -43,24 +43,5 @@ div.wrap {
   @include media($desktop) {
     @include span-columns(5 of 8);
     @include omega();
-  }
-}
-
-@mixin list-grid ($bp, $col-width, $number-li) {
-  //Creates a grid for list items
-  //$bp = breakpoint
-  //$col-width = the number of span-columns in your grid
-  //$number-li = the number of list items
-  ul {
-    @include span-columns($col-width);
-    @include pad(0);
-    
-    li {
-      @include span-columns($col-width of $col-width);
-      @include media($bp) {
-        @include span-columns($col-width / $number-li of $col-width);
-        @include omega($number-li+n);
-      }
-    }
   }
 }

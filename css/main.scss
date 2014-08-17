@@ -1,10 +1,11 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/normalize";
-@import "helpers/settings"; // breakpoints
-// variables
+
+@import "helpers/settings"; 
+@import "helpers/grid-specs";
 @import "helpers/typography";
-// helpers
+
 @import "theme/layout";
 // homepage
 // nav
