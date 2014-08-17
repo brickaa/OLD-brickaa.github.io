@@ -36,3 +36,13 @@ $small: new-breakpoint(max-width 480px);
     }
   }
 }
+
+@mixin div-grid ($bp, $col-width, $number-div, $min-col) {
+  // @include span-columns ($col-width / $min-col);
+  
+  @include media($bp) {
+    div {
+      @include span-columns($col-width / $number-div of $col-width);
+    }
+  }
+}
