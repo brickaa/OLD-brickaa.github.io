@@ -3,6 +3,10 @@
   @extend %container;
 }
 
+.block {
+  @extend %pad;
+}
+
 
 div.site-title {
   @include layout($large, 12, 8);

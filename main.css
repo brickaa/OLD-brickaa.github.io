@@ -368,6 +368,9 @@ th {
     display: table;
     clear: both; }
 
+.block {
+  padding: 0 0.5em; }
+
 body {
   color: #404040;
   background: whitesmoke;
