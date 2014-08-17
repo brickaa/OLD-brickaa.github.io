@@ -19,8 +19,9 @@ $(document).ready(function() {
   		entry = data.feed.entry[i];
   		console.log(data.feed.entry[i]);
   		$('<div class="item col2">' +
-		    '<h3><a href="">' + entry.title.$t + '</a></h3>' +
-		    '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>' +
+		    '<h3><a href="' + entry.gsx$url.$t +'">' + entry.title.$t + '</a></h3>' +
+		    '<p>' + entry.gsx$date.$t + '</p>' +
+		    '<p>' + entry.gsx$desc.$t + '</p>' +
 		  '</div>').appendTo('#container');
   	}
   }
