@@ -17,11 +17,11 @@ $(document).ready(function() {
     for (var i = 0; i < data.feed.entry.length; i++) {
       entry = data.feed.entry[i];
       console.log(data.feed.entry[i]);
-      $('<div class="box col2">' +
+      $('<div>' +
         '<h3><a href="' + entry.gsx$url.$t +'">' + entry.title.$t + '</a></h3>' +
         '<p>' + entry.gsx$date.$t + '</p>' +
         '<img src="' + entry.gsx$img.$t + '" />' +
-      '</div>').appendTo('#container');
+      '</div>').appendTo('.newsapps');
     }
   }
 

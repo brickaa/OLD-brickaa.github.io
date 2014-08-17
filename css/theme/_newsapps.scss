@@ -1,3 +1,8 @@
 .newsapps {
-	@include div-grid ($large, 8, 2);
+  @include media($large) {
+    div {
+      @include span-columns(4 of 8);
+      @include pad(0);
+    }
+  }
 }

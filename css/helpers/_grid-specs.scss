@@ -1,5 +1,5 @@
 // Breakpoints
-$large: new-breakpoint(min-width 800px 12);
+$large: new-breakpoint(min-width 800px);
 $small: new-breakpoint(max-width 480px);
 
 %container {
@@ -37,8 +37,7 @@ $small: new-breakpoint(max-width 480px);
   }
 }
 
-@mixin div-grid ($bp, $col-width, $number-div, $min-col) {
-  // @include span-columns ($col-width / $min-col);
+@mixin div-grid ($bp, $col-width, $number-div) {
   
   @include media($bp) {
     div {
