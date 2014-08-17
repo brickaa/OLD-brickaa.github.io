@@ -1,46 +1,35 @@
-//header.html
-header div.wrap {
+//Add to Grid
+.wrap {
   @extend %container;
   @extend %pad;
 }
 
+
 div.site-title {
-  @include media($desktop) {
-    @include span-columns(8);
-    @include shift(2);
-  }
+  @include layout($large, 12, 8);
 }
 
 //header nav
 nav {
-  @include media($desktop) {
-    @include span-columns(6);
-    @include shift(3);
-  }
+  @include media($large, 12, 6);
 }
 
-//Add to Grid
-div.wrap {
-  @include outer-container();
-}
+
 
 //Main center grid
 .main-grid {
-  @include media($desktop) {
-    @include span-columns(8);
-    @include shift(2);
-  }
+  @include layout($large, 12, 8);
 }
 
 //Post List
 .post-title {
-  @include media($desktop) {
+  @include media($large) {
     @include span-columns(3 of 8);
     @include pad(0);
   }
 }
 .post-excerpt {
-  @include media($desktop) {
+  @include media($large) {
     @include span-columns(5 of 8);
     @include omega();
   }
