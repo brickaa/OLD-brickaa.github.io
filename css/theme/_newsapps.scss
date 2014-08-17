@@ -1,3 +1,7 @@
 .newsapps {
   @include list-grid($large, 12, 3);
 }
+
+img {
+	width: 75%;
+}

@@ -368,6 +368,35 @@ th {
     display: table;
     clear: both; }
 
+body {
+  color: #404040;
+  background: whitesmoke;
+  font: 300 1em Helvetica;
+  text-align: left; }
+
+a {
+  color: #404040;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: #bdcfbd; }
+
+header {
+  background: #bdcfbd;
+  border-bottom: 1px solid;
+  margin: 0;
+  padding: 0; }
+  header a:hover {
+    color: #404040; }
+
+hr {
+  border: 1px solid #fd795b;
+  margin: 1.5em 0;
+  clear: both; }
+
+img {
+  width: 100%; }
+
 div.site-title {
   float: left;
   display: block;
@@ -439,57 +468,23 @@ nav {
     .post-excerpt:last-child {
       margin-right: 0; } }
 
-.newsapps ul {
+.newsapps li {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  padding: 0; }
-  .newsapps ul:last-child {
+  width: 100%; }
+  .newsapps li:last-child {
     margin-right: 0; }
-  .newsapps ul li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .newsapps ul li:last-child {
-      margin-right: 0; }
-    @media screen and (min-width: 800px) {
-      .newsapps ul li {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .newsapps ul li:last-child {
-          margin-right: 0; }
-        .newsapps ul li:nth-child(3n) {
-          margin-right: 0; } }
-
-body {
-  color: #404040;
-  background: whitesmoke;
-  font: 300 1em Helvetica;
-  text-align: left; }
-
-a {
-  color: #404040;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline;
-    color: #bdcfbd; }
-
-header {
-  background: #bdcfbd;
-  border-bottom: 1px solid;
-  margin: 0;
-  padding: 0; }
-  header a:hover {
-    color: #404040; }
-
-hr {
-  border: 1px solid #fd795b;
-  margin: 1.5em 0;
-  clear: both; }
+  @media screen and (min-width: 800px) {
+    .newsapps li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .newsapps li:last-child {
+        margin-right: 0; }
+      .newsapps li:nth-child(3n) {
+        margin-right: 0; } }
 
 img {
-  width: 100%; }
+  width: 75%; }
