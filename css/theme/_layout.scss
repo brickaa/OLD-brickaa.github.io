@@ -1,7 +1,7 @@
 //header.html
 header div.wrap {
-  @extend %wrap;
-  @include pad(0.5em);
+  @extend %container;
+  @extend %pad;
 }
 
 div.site-title {

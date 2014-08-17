@@ -1,8 +1,18 @@
-%wrap {
+%container {
   @include outer-container;
 }
 
-%
+%pad {
+  @include pad(0 0.5em);
+}
+
+@mixin layout ($bp, $total-span-width, $col-span-size) {
+  @include span-columns($total-span-width);
+  @include media($bp) {
+    @include span-columns($col-span-size of $total-span-width);
+    @include shift(($total-span-width - $col-span-size) / 2);
+  }
+}
 
 @mixin list-grid ($bp, $col-width, $number-li) {
   //Creates a grid for list items
