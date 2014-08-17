@@ -10,7 +10,6 @@ $(document).ready(function() {
   }).done( function() {
     // console.log(data.feed.entry[0]);
     buildPortfolio(data);
-    buildWall();
   });
 
   function buildPortfolio(data) {
@@ -18,16 +17,12 @@ $(document).ready(function() {
     for (var i = 0; i < data.feed.entry.length; i++) {
       entry = data.feed.entry[i];
       console.log(data.feed.entry[i]);
-      $('<div class="item col2">' +
+      $('<div class="box col2">' +
         '<h3><a href="' + entry.gsx$url.$t +'">' + entry.title.$t + '</a></h3>' +
         '<p>' + entry.gsx$date.$t + '</p>' +
-        '<p>' + entry.gsx$desc.$t + '</p>' +
+        '<img src=">' + entry.gsx$img.$t + '" />' +
       '</div>').appendTo('#container');
     }
-  }
-
-  function buildWall() {
-    var wall = new Masonry( document.getElementById('container') );
   }
 
 });
