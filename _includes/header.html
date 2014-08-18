@@ -8,12 +8,21 @@
     <nav class="site-nav">
       <a href="#" class="menu-icon">
       </a>
-      <div class="trigger">
+      <div>
         {% for page in site.pages %}
           {% if page.title %}
             <div class="page-link"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
           {% endif %}
         {% endfor %}
+        <div class="page-link">
+          Say Hi:  
+          <a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a>  
+          <a href="http://instagram.com/{{ site.insta_username }}"><i class="fa fa-instagram"></i></a>  
+          <a href="http://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>         
+        </div>
+        <div class="page-link">
+          Git: <a href="http://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a> 
+        </div>
       </div>
     </nav>
   </div>
