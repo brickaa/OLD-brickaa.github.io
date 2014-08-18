@@ -6,12 +6,10 @@
 @import "helpers/grid-specs";
 @import "helpers/typography";
 
-@import "theme/theme";
+@import "theme/base-theme";
 @import "theme/layout";
 @import "theme/newsapps";
-// homepage
-// nav
-// posts
-// pages
+@import "theme/about";
+
 
 

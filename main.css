@@ -490,3 +490,8 @@ nav {
         margin-right: 0; } }
 .newsapps img {
   width: 75%; }
+
+.about-me img {
+  width: 25%;
+  float: left;
+  margin-right: 1em; }
