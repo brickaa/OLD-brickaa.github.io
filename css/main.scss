@@ -6,8 +6,10 @@
 @import "helpers/grid-specs";
 @import "helpers/typography";
 
-@import "theme/base-theme";
 @import "theme/layout";
+@import "theme/base-theme";
+@import "theme/header";
+@import "theme/footer";
 @import "theme/newsapps";
 @import "theme/about";
 

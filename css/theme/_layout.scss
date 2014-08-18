@@ -7,35 +7,8 @@
   @extend %pad;
 }
 
-
-div.site-title {
-  @include layout($large, 12, 8);
-}
-
-//header nav
-nav {
-  @include layout($large, 12, 6);
-}
-
-
-
 //Main center grid
 .main-grid {
   @include layout($large, 12, 8);
 }
-
-//Post List
-.post-title {
-  @include media($large) {
-    @include span-columns(3 of 8);
-    @include pad(0);
-  }
-}
-.post-excerpt {
-  @include media($large) {
-    @include span-columns(5 of 8);
-    @include omega();
-  }
-}
-
 

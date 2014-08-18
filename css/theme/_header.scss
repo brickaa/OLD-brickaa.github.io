@@ -2,9 +2,14 @@
   padding: 0.25em;
   h1 {
     @include font(2, center);
-    color: $offBlack;
+    color: $off-black;
     @include letter-space(10);
+    text-align: center;
   }
+}
+
+.center-text {
+  text-align: center;
 }
 
 //Top Navigation Bar
