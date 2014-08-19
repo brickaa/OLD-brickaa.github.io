@@ -5,7 +5,12 @@ permalink: /about/
 ---
 <div class="block">
 	<div class="about-me">
-	  <img src="{{ site.url }}/images/me.jpg">
+	site.url
+	  <img src="{{ site.url }}/images/me.jpg"><br/>
+	  site.baseurl
+	  <img src="{{ site.baseurl }}/images/me.jpg"><br/>
+	  no variable
+	  <img src="/images/me.jpg"><br/>
 	  <h2>Hi, I'm Becca.</h2>
 	  <p>I develop news applications and work on special investigative projects for The Texas Tribune. My goal is to contribute to a new media model that promotes civic engagement and advances community interests.</p>
 	  <p>I joined The Texas Tribune in 2010, shortly after earning a bachelor’s degree in cultural theory from Scripps College in Claremont, CA. As a data reporter, I developed interactive stories, and wrote about a myriad of political topics, including the economy, health care and the 2011 Texas legislative session. In 2012, I was promoted to cover health care for the Tribune, during which time I was nationally recognized for my coverage of women’s health and abortion politics. As a founding member of the Tribune’s news apps team, I decided to leave the health care beat in 2014 to work on news apps full-time. </p>

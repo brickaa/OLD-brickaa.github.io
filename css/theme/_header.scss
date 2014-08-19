@@ -3,7 +3,6 @@
   h1 {
     @include font(2, center);
     color: $off-black;
-    @include letter-space(10);
     text-align: center;
   }
 }
@@ -13,17 +12,29 @@
 }
 
 //Top Navigation Bar
-nav.site-nav {
+nav {
   @include font(1, center);
   color: #000;
   text-align:center;
+
+  @include div-grid($large, 12, 4);
 }
-div.page-link {
+
+
+.page-link {
   display: inline-block;
   border-right: 1px solid;
   padding: 0 0.75em;
+
   &:last-child {
     border-right: none;
     padding: 0 0 0 0.75em;
   }
+
+  i {
+    &:hover {
+      color: $orange;
+    }
+  }
 }
+

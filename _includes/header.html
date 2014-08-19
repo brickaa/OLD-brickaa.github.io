@@ -5,10 +5,7 @@
         <h1 class="center-text">{{ site.title }}</h1>
       </a>
     </div>
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-      </a>
-      <div>
+    <nav>
         {% for page in site.pages %}
           {% if page.title %}
             <div class="page-link"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
@@ -23,7 +20,6 @@
         <div class="page-link">
           Git: <a href="http://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a> 
         </div>
-      </div>
     </nav>
   </div>
 

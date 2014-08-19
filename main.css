@@ -423,25 +423,34 @@ img {
     font: 300 2em Helvetica;
     text-align: center;
     color: #404040;
-    letter-spacing: 10px;
     text-align: center; }
 
 .center-text {
   text-align: center; }
 
-nav.site-nav {
+nav {
   font: 300 1em Helvetica;
   text-align: center;
   color: #000;
   text-align: center; }
+  @media screen and (min-width: 800px) {
+    nav div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      nav div:last-child {
+        margin-right: 0; } }
 
-div.page-link {
+.page-link {
   display: inline-block;
   border-right: 1px solid;
   padding: 0 0.75em; }
-  div.page-link:last-child {
+  .page-link:last-child {
     border-right: none;
     padding: 0 0 0 0.75em; }
+  .page-link i:hover {
+    color: #fd795b; }
 
 .social {
   font: 300 1em Helvetica;
