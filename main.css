@@ -378,7 +378,7 @@ th {
   width: 100%; }
   .main-grid:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 640px) {
     .main-grid {
       float: left;
       display: block;
@@ -483,7 +483,7 @@ nav {
   width: 100%; }
   .newsapps li:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 400px) {
     .newsapps li {
       padding: 0;
       float: left;
@@ -497,7 +497,7 @@ nav {
 .newsapps img {
   width: 75%; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 400px) {
   .about-me .intro {
     float: left;
     display: block;
@@ -508,7 +508,7 @@ nav {
       margin-right: 0; } }
 .about-me .intro-image {
   margin: 0 1em 1em 0; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 400px) {
     .about-me .intro-image {
       float: left;
       display: block;

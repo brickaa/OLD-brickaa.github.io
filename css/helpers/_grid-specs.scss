@@ -1,6 +1,6 @@
 // Breakpoints
-$large: new-breakpoint(min-width 800px);
-$medium: new-breakpoint(min-width 640px);
+$large: new-breakpoint(min-width 640px);
+$medium: new-breakpoint(min-width 400px);
 $small: new-breakpoint(max-width 400px);
 
 %container {

@@ -18,7 +18,7 @@
 
 //Top Navigation Bar
 nav {
-  @include list-grid($medium, 12, 4);
+  @include list-grid($large, 12, 4);
   @include font(1, center);
   color: #000;
   text-align: center;
