@@ -483,7 +483,7 @@ nav {
   width: 100%; }
   .newsapps li:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 640px) {
     .newsapps li {
       padding: 0;
       float: left;
@@ -494,6 +494,8 @@ nav {
         margin-right: 0; }
       .newsapps li:last-child {
         margin-right: 0; } }
+.newsapps ul {
+  padding: 0; }
 .newsapps img {
   width: 75%; }
 
