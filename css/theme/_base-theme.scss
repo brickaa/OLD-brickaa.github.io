@@ -10,7 +10,7 @@ a {
   color: $off-black;
 
   &:hover {
-    color: $orange;
+    color: $gray;
   }
 }
 
@@ -27,12 +27,12 @@ header {
   }
 
   &.post-header {
-    border-color: $orange;
+    border-color: $dk-teal;
   }
 }
 
 hr {
-  border: 1px solid $orange;
+  border: 1px solid $gray;
   clear: both;
   margin: 1.5em 0;
 }

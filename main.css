@@ -397,7 +397,7 @@ body {
 a {
   color: #404040; }
   a:hover {
-    color: #fd795b; }
+    color: #666666; }
 
 header {
   border-bottom: 1px solid #404040;
@@ -406,10 +406,10 @@ header {
   header a:hover {
     color: #404040; }
   header.post-header {
-    border-color: #fd795b; }
+    border-color: #bdcfbd; }
 
 hr {
-  border: 1px solid #fd795b;
+  border: 1px solid #666666;
   clear: both;
   margin: 1.5em 0; }
 
