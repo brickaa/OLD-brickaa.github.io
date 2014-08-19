@@ -535,7 +535,7 @@ footer {
 .newsapps ul {
   padding: 0; }
 .newsapps img {
-  width: 75%; }
+  width: 100%; }
 
 @media screen and (min-width: 400px) {
   .about-me .intro {
