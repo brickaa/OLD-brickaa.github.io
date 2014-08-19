@@ -17,10 +17,12 @@ nav {
   @include list-grid($medium, 12, 4);
   @include font(1, center);
   color: #000;
-  margin-bottom: .5em;
   text-align: center;
-}
 
+  li {
+    margin-bottom: .5em;
+  }
+}
 
 .page-link {
   border-right: 1px solid;
