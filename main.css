@@ -476,8 +476,10 @@ nav {
   .page-link:last-child {
     border-right: 0;
     padding: 0 0 0 .75em; }
-  .page-link i:hover {
-    color: #fd795b; }
+  .page-link i {
+    padding: 0 .5em; }
+    .page-link i:hover {
+      color: #fd795b; }
 
 footer {
   border-top: 1px solid #404040; }
