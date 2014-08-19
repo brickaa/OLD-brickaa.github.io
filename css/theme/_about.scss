@@ -1,7 +1,21 @@
 .about-me {
-	img {
-		width: 25%;
-		float: left;
-		margin-right: 1em;
-	}
+
+  .intro {
+    @include media($medium) {
+      @include span-columns (4 of 8);
+      @include omega();
+    }
+  }
+
+  .intro-image {
+    @include media($medium) {
+      @include span-columns (4 of 8);
+    }
+
+    margin: 0 1em 1em 0;
+
+    img {
+      width: 100%;
+    }
+  }
 }
