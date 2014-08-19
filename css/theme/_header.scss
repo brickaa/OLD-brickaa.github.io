@@ -1,5 +1,13 @@
 .site-header {
   background: $dk-teal;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .site-title {
@@ -8,6 +16,7 @@
   h1 {
     @include font(2, center);
     color: $off-black;
+    margin: .25em 0;
     text-align: center;
   }
 }
@@ -30,6 +39,7 @@ nav {
 
 .nav-list {
   @include pad(0);
+
 }
 
 .page-link {

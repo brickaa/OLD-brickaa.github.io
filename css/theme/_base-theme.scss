@@ -8,11 +8,9 @@ body {
 
 a {
   color: $off-black;
-  text-decoration: none;
 
   &:hover {
-    color: $dk-teal;
-    text-decoration: underline;
+    color: $orange;
   }
 }
 
@@ -39,5 +37,10 @@ img {
   width: 100%;
 }
 
-
+ 
+h2, 
+h3, 
+h4 {
+  margin: 0 0 1em;
+}
 

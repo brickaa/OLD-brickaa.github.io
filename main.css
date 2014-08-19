@@ -395,11 +395,9 @@ body {
   color: #404040; }
 
 a {
-  color: #404040;
-  text-decoration: none; }
+  color: #404040; }
   a:hover {
-    color: #bdcfbd;
-    text-decoration: underline; }
+    color: #fd795b; }
 
 header {
   border-bottom: 1px solid;
@@ -416,8 +414,17 @@ hr {
 img {
   width: 100%; }
 
+h2,
+h3,
+h4 {
+  margin: 0 0 1em; }
+
 .site-header {
   background: #bdcfbd; }
+  .site-header a {
+    text-decoration: none; }
+    .site-header a:hover {
+      text-decoration: underline; }
 
 .site-title {
   padding: .25em; }
@@ -425,6 +432,7 @@ img {
     font: 300 2em Helvetica;
     text-align: center;
     color: #404040;
+    margin: .25em 0;
     text-align: center; }
 
 .center-text {
@@ -468,6 +476,11 @@ nav {
     padding: 0 0 0 .75em; }
   .page-link i:hover {
     color: #fd795b; }
+
+footer a {
+  text-decoration: none; }
+  footer a:hover {
+    text-decoration: underline; }
 
 .social {
   font: 300 1em Helvetica;
