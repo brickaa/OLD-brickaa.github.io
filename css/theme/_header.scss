@@ -29,6 +29,9 @@
 nav {
   @include list-grid($large, 12, 4);
   @include font(1, center);
+  @include letter-space(3);
+
+  border-top: 1px solid $gray;
   color: #000;
   text-align: center;
 
@@ -43,7 +46,7 @@ nav {
 }
 
 .page-link {
-  border-right: 1px solid;
+  // border-right: 1px solid;
   display: inline-block;
   padding: 0 .75em;
 
