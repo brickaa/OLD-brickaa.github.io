@@ -1,4 +1,6 @@
 footer {
+  border-top: 1px solid $off-black;
+
   a {
     text-decoration: none;
 
@@ -11,7 +13,13 @@ footer {
 .social {
   @include font(1, center);
   @include letter-space(3);
-  ul li {
-    display: inline-block;
+  @include list-grid($large, 12, 4);
+
+  ul {
+    @include pad(0);
+  }
+
+  li {
+    margin-bottom: 1em;
   }
 }

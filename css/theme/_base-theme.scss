@@ -16,7 +16,7 @@ a {
 
 //Site Header
 header {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $off-black;
   margin: 0;
   padding: 0;
 
@@ -24,6 +24,10 @@ header {
     &:hover {
       color: $off-black;
     }
+  }
+
+  &.post-header {
+    border-color: $orange;
   }
 }
 

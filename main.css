@@ -400,11 +400,13 @@ a {
     color: #fd795b; }
 
 header {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #404040;
   margin: 0;
   padding: 0; }
   header a:hover {
     color: #404040; }
+  header.post-header {
+    border-color: #fd795b; }
 
 hr {
   border: 1px solid #fd795b;
@@ -477,17 +479,39 @@ nav {
   .page-link i:hover {
     color: #fd795b; }
 
-footer a {
-  text-decoration: none; }
-  footer a:hover {
-    text-decoration: underline; }
+footer {
+  border-top: 1px solid #404040; }
+  footer a {
+    text-decoration: none; }
+    footer a:hover {
+      text-decoration: underline; }
 
 .social {
   font: 300 1em Helvetica;
   text-align: center;
   letter-spacing: 3px; }
-  .social ul li {
-    display: inline-block; }
+  .social li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .social li:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 640px) {
+      .social li {
+        padding: 0;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        .social li:nth-child(4n) {
+          margin-right: 0; }
+        .social li:last-child {
+          margin-right: 0; } }
+  .social ul {
+    padding: 0; }
+  .social li {
+    margin-bottom: 1em; }
 
 .newsapps li {
   float: left;
