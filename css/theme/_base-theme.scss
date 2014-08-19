@@ -1,17 +1,18 @@
 
 // General
 body {
-  color: $off-black;
-  background: $off-white;
   @include font(1, left);
+  background: $off-white;
+  color: $off-black;
 }
 
 a {
   color: $off-black;
   text-decoration: none;
+
   &:hover {
-    text-decoration: underline;
     color: $dk-teal;
+    text-decoration: underline;
   }
 }
 
@@ -21,8 +22,9 @@ header {
   border-bottom: 1px solid;
   margin: 0;
   padding: 0;
+
   a {
-    &:hover{
+    &:hover {
       color: $off-black;
     }
   }
@@ -30,8 +32,8 @@ header {
 
 hr {
   border: 1px solid $orange;
-  margin: 1.5em 0;
   clear: both;
+  margin: 1.5em 0;
 }
 
 img {

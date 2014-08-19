@@ -24,6 +24,10 @@ nav {
   }
 }
 
+.nav-list {
+  @include pad(0);
+}
+
 .page-link {
   border-right: 1px solid;
   display: inline-block;

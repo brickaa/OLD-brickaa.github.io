@@ -389,17 +389,17 @@ th {
         margin-right: 0; } }
 
 body {
-  color: #404040;
-  background: whitesmoke;
   font: 300 1em Helvetica;
-  text-align: left; }
+  text-align: left;
+  background: whitesmoke;
+  color: #404040; }
 
 a {
   color: #404040;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline;
-    color: #bdcfbd; }
+    color: #bdcfbd;
+    text-decoration: underline; }
 
 header {
   background: #bdcfbd;
@@ -411,8 +411,8 @@ header {
 
 hr {
   border: 1px solid #fd795b;
-  margin: 1.5em 0;
-  clear: both; }
+  clear: both;
+  margin: 1.5em 0; }
 
 img {
   width: 100%; }
@@ -453,6 +453,9 @@ nav {
           margin-right: 0; } }
   nav li {
     margin-bottom: .5em; }
+
+.nav-list {
+  padding: 0; }
 
 .page-link {
   border-right: 1px solid;
