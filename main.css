@@ -416,9 +416,7 @@ hr {
 img {
   width: 100%; }
 
-h2,
-h3,
-h4 {
+h2 {
   margin: 0 0 1em; }
 
 .site-header {
@@ -543,7 +541,7 @@ footer {
     float: left;
     display: block;
     margin-right: 3.57866%;
-    width: 48.21067%;
+    width: 35.26334%;
     margin-right: 0; }
     .about-me .intro:last-child {
       margin-right: 0; } }
@@ -554,7 +552,7 @@ footer {
       float: left;
       display: block;
       margin-right: 3.57866%;
-      width: 48.21067%; }
+      width: 61.158%; }
       .about-me .intro-image:last-child {
         margin-right: 0; } }
   .about-me .intro-image img {
