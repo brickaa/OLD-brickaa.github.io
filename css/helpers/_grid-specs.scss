@@ -1,7 +1,7 @@
 // Breakpoints
-$large: new-breakpoint(min-width 640px);
-$medium: new-breakpoint(min-width 400px);
-$small: new-breakpoint(max-width 400px);
+$large: new-breakpoint(min-width 1000px);
+$medium: new-breakpoint(min-width 640px max-width 999px);
+$small: new-breakpoint(max-width 639px);
 
 %container {
   @include outer-container;

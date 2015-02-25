@@ -38,6 +38,8 @@ hr {
 }
 
 img {
+  margin-top: 1em;
+  max-width: 27em;
   width: 100%;
 }
 
@@ -46,3 +48,11 @@ h2 {
   margin: 0 0 1em;
 }
 
+.landing {
+
+  img {
+    margin-top: 1em;
+    max-width: 27em;
+  }
+
+}
