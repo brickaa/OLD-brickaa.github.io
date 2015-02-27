@@ -1,15 +1,18 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
-@import "normalize";
-@import "settings"; // breakpoints
-// variables
-@import "typography";
-// helpers
-@import "layout";
-// homepage
-// nav
-// posts
-// pages
-@import "theme";
+@import "base/normalize";
 
-@import "masonry";
+@import "helpers/settings"; 
+@import "helpers/grid-specs";
+@import "helpers/typography";
+
+@import "theme/layout";
+@import "theme/global";
+@import "theme/header";
+@import "theme/footer";
+@import "theme/landing";
+@import "theme/newsapps";
+@import "theme/about";
+
+
+

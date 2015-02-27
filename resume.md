@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Resume
 permalink: /resume/
@@ -78,3 +78,4 @@ Bachelor of Arts, Cum Laude, Honors in Major: Interdisciplinary Studies in Cultu
 Honors Thesis: Dialogism and the Individual: How Expression and Media Influence Culture and Intersubjective Identity Constructions
 </div>
 
+ -->

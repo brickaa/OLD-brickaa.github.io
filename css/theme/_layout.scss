@@ -1,0 +1,15 @@
+//Add to Grid
+.wrap {
+  @extend %container;
+}
+
+.block {
+  @extend %pad;
+}
+
+//Main center grid
+.main-grid {
+  @include layout($large, 12, 8);
+
+}
+

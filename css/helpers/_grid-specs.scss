@@ -1,0 +1,45 @@
+// Breakpoints
+$large: new-breakpoint(min-width 1000px);
+$medium: new-breakpoint(min-width 640px max-width 999px);
+$small: new-breakpoint(max-width 639px);
+
+%container {
+  @include outer-container;
+}
+
+%pad {
+  @include pad(0 .5em);
+}
+
+@mixin layout ($bp, $total-span-width, $col-span-size) {
+  @include span-columns($total-span-width);
+  @include media($bp) {
+    @include span-columns($col-span-size of $total-span-width);
+    @include shift(($total-span-width - $col-span-size) / 2);
+  }
+}
+
+@mixin list-grid ($bp, $col-width, $number-li) {
+  //Creates a grid for list items
+  //$bp = breakpoint
+  //$col-width = the number of span-columns in your grid
+  //$number-li = the number of list items
+
+  li {
+    @include span-columns($col-width of $col-width);
+    @include media($bp) {
+      @include omega($number-li+n);
+      @include pad(0);
+      @include span-columns($col-width / $number-li of $col-width);
+    }
+  }
+}
+
+@mixin div-grid ($bp, $col-width, $number-div) {
+  
+  @include media($bp) {
+    div {
+      @include span-columns($col-width / $number-div of $col-width);
+    }
+  }
+}

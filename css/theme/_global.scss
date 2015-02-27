@@ -1,0 +1,58 @@
+
+// General
+body {
+  @include font(1, left);
+  background: $off-white;
+  color: $off-black;
+}
+
+a {
+  color: $off-black;
+
+  &:hover {
+    color: $gray;
+  }
+}
+
+//Site Header
+header {
+  border-bottom: 1px solid $off-black;
+  margin: 0;
+  padding: 0;
+
+  a {
+    &:hover {
+      color: $off-black;
+    }
+  }
+
+  &.post-header {
+    border-color: $dk-teal;
+  }
+}
+
+hr {
+  border: 1px solid $gray;
+  clear: both;
+  margin: 1.5em 0;
+}
+
+img {
+  margin-top: 1em;
+  max-width: 27em;
+  width: 100%;
+}
+
+ 
+h2 {
+  margin: 0 0 1em;
+}
+
+.landing {
+
+  img {
+    margin-top: 1em;
+    max-width: 27em;
+  }
+
+}

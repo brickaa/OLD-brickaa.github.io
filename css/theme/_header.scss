@@ -1,0 +1,66 @@
+.site-header {
+  background: $dk-teal;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-title {
+  padding: .25em;
+
+  h1 {
+    @include font(2, center);
+    color: $off-black;
+    margin: .25em 0;
+    text-align: center;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+//Top Navigation Bar
+nav {
+  @include list-grid($large, 12, 4);
+  @include list-grid($large, 12, 2);
+  @include font(1, center);
+  @include letter-space(3);
+
+  border-top: 1px solid $gray;
+  color: #000;
+  text-align: center;
+
+  li {
+    margin-bottom: .5em;
+  }
+}
+
+.nav-list {
+  @include pad(0);
+
+}
+
+.page-link {
+  display: inline-block;
+  padding: 0 .75em;
+
+  &:last-child {
+    border-right: 0;
+    padding: 0 0 0 .75em;
+  }
+
+  i {
+    padding: 0 .5em;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+

@@ -2,19 +2,27 @@
   <div class="wrap">
     <div class="site-title">
       <a class="site-title" href="{{ site.baseurl }}/">
-        <h1 class="center-text">{{ site.title }}</h1>
+        <h1>{{ site.title }}</h1>
       </a>
     </div>
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-      </a>
-      <div class="trigger">
+    <nav>
+      <ul class="nav-list">
+        
         {% for page in site.pages %}
           {% if page.title %}
-            <div class="page-link"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+            <li class="page-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
-      </div>
+        <li class="page-link">
+          <a href="http://github.com/{{ site.github_username }}">Git <i class="fa fa-github"></i></a> 
+        </li>
+        <li class="page-link">
+          Say Hi    
+          <a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a>  
+          <a href="http://instagram.com/{{ site.insta_username }}"><i class="fa fa-instagram"></i></a>  
+          <a href="http://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>         
+        </li>
+      </ul>
     </nav>
   </div>
 

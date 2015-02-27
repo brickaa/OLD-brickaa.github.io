@@ -1,0 +1,25 @@
+footer {
+  border-top: 1px solid $off-black;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.social {
+  @include font(1, center);
+  @include letter-space(3);
+  @include list-grid($large, 12, 4);
+
+  ul {
+    @include pad(0);
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+}
