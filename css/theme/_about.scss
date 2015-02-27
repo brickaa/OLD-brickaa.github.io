@@ -1,21 +1,28 @@
 .about-me {
-
   .intro {
-    @include media($medium) {
-      @include span-columns (3 of 8);
-      @include omega();
-    }
-  }
+    // @include media($medium) {
+    //   @include span-columns (3 of 8);
+    //   @include omega();
+    // }
 
-  .intro-image {
-    @include media($medium) {
-      @include span-columns (5 of 8);
+    h2 {
+      margin: 1em 0 .25em;
     }
-
-    margin: 0 1em 1em 0;
 
     img {
-      width: 100%;
+      @include media($small) {
+        float: none;
+        width: 100%;
+      }
+
+      float: left;
+      margin: 0 1em 1em 0;
+      width: 50%;
+    }
+
+    p {
+      margin: 0 0 1em;
     }
   }
+
 }

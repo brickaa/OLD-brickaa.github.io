@@ -560,24 +560,15 @@ footer {
 .newsapps img {
   width: 100%; }
 
-@media screen and (min-width: 640px) and (max-width: 999px) {
-  .about-me .intro {
-    float: left;
-    display: block;
-    margin-right: 3.57866%;
-    width: 35.26334%;
-    margin-right: 0; }
-    .about-me .intro:last-child {
-      margin-right: 0; } }
-.about-me .intro-image {
-  margin: 0 1em 1em 0; }
-  @media screen and (min-width: 640px) and (max-width: 999px) {
-    .about-me .intro-image {
-      float: left;
-      display: block;
-      margin-right: 3.57866%;
-      width: 61.158%; }
-      .about-me .intro-image:last-child {
-        margin-right: 0; } }
-  .about-me .intro-image img {
-    width: 100%; }
+.about-me .intro h2 {
+  margin: 1em 0 .25em; }
+.about-me .intro img {
+  float: left;
+  margin: 0 1em 1em 0;
+  width: 50%; }
+  @media screen and (max-width: 639px) {
+    .about-me .intro img {
+      float: none;
+      width: 100%; } }
+.about-me .intro p {
+  margin: 0 0 1em; }
