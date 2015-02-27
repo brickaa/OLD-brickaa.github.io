@@ -1,13 +1,12 @@
-<header class="site-header">
+<section class="site-header">
   <div class="wrap">
-    <div class="site-title">
+    <header class="site-title">
       <a class="site-title" href="{{ site.baseurl }}/">
         <h1>{{ site.title }}</h1>
       </a>
-    </div>
+    </header>
     <nav>
       <ul class="nav-list">
-        
         {% for page in site.pages %}
           {% if page.title %}
             <li class="page-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -25,5 +24,4 @@
       </ul>
     </nav>
   </div>
-
-</header>
+</section>
