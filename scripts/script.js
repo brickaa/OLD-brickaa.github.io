@@ -1,14 +1,18 @@
 /* Main script file */
+'use strict';
+
+function setHeight() {
+  var height = $(window).height() * .8;
+  $('.landing').css('height', height);
+}
 
 $(document).ready(function() {
-
   var data = [];
 
   //Load JSON data from Google Spreadsheet
   $.getJSON('https://spreadsheets.google.com/feeds/list/1Vdt46LVbwiivYQw3qNq2Qn7qZktYEIEztKF9z5Ma3Vc/od6/public/values?alt=json', function(json) {
     data = json;
   }).done( function() {
-    // console.log(data.feed.entry[0]);
     buildPortfolio(data);
   });
 
@@ -26,5 +30,14 @@ $(document).ready(function() {
     }
   }
 
+  setHeight();
 });
 
+// Reset heights/positions on window resize
+$(window).resize(function() {
+  setHeight();
+});
+
+$(window).on( 'orientationchange', function() {
+  setHeight();
+});

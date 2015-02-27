@@ -520,6 +520,15 @@ footer {
   .social li {
     margin-bottom: 1em; }
 
+.landing {
+  text-align: center;
+  padding: 1em 0; }
+  .landing img {
+    margin: 0 auto; }
+    @media screen and (max-width: 639px) {
+      .landing img {
+        max-width: 320px; } }
+
 .newsapps ul {
   padding: 0;
   list-style: none; }

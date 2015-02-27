@@ -1,1 +1,11 @@
+.landing {
+  text-align: center;
+  padding: 1em 0;
 
+  img {
+    margin: 0 auto;
+    @include media($small) {
+      max-width: 320px;
+    }
+  }
+}
