@@ -28,7 +28,6 @@
 //Top Navigation Bar
 nav {
   @include list-grid($large, 12, 4);
-  @include list-grid($large, 12, 2);
   @include font(1, center);
   @include letter-space(3);
 

@@ -18,9 +18,9 @@ $(document).ready(function() {
       entry = data.feed.entry[i];
       console.log(data.feed.entry[i]);
       $('<li>' +
-        '<h3><a href="' + entry.gsx$url.$t +'">' + entry.title.$t + '</a></h3>' +
-        '<p>' + entry.gsx$date.$t + '</p>' +
         '<img src="' + entry.gsx$img.$t + '" />' +
+        '<h3><a href="' + entry.gsx$url.$t +'">' + entry.title.$t + '</a></h3>' +
+        '<p class="dateline">' + entry.gsx$date.$t + '</p>' +
         '<p>' + entry.gsx$desc.$t + '</p>' +
       '</li>').appendTo('.list-grid');
     }
